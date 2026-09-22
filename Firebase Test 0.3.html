@@ -313,19 +313,25 @@ window.firebasePasswortAendern = async function () {
 &lt;/p&gt;
 
 &lt;p id=&quot;firebaseTextErgebnis&quot;&gt;&lt;/p&gt;
-&lt;h2&gt;Firebase Text-Test&lt;/h2&gt;
+&lt;hr&gt;
 
-&lt;p&gt;Schreibe eine Testnachricht mit maximal 100 Zeichen:&lt;/p&gt;
+&lt;h2&gt;Eigenes Passwort ändern&lt;/h2&gt;
 
-&lt;textarea id=&quot;firebaseTestText&quot; maxlength=&quot;100&quot;&gt;&lt;/textarea&gt;
+&lt;p&gt;Neues Passwort:&lt;/p&gt;
+
+&lt;input
+    id=&quot;neuesPasswort&quot;
+    type=&quot;password&quot;
+    autocomplete=&quot;new-password&quot;
+&gt;
 
 &lt;p&gt;
-	&lt;button onclick=&quot;firebaseTextSpeichern()&quot;&gt;In Firebase speichern&lt;/button&gt;
+    &lt;button onclick=&quot;firebasePasswortAendern()&quot;&gt;
+        Passwort ändern
+    &lt;/button&gt;
 &lt;/p&gt;
 
-&lt;p id=&quot;firebaseTextErgebnis&quot;&gt;&lt;/p&gt;
-
-&lt;button onclick=&quot;firebaseLogout()&quot;&gt;Abmelden&lt;/button&gt;
+&lt;p id=&quot;passwortErgebnis&quot;&gt;&lt;/p&gt;
 &lt;button onclick=&quot;firebaseLogout()&quot;&gt;Abmelden&lt;/button&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
